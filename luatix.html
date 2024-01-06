@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viweport" content="width = device- width initial-scale=1.0">
+    <meta http-equiv="X-UA - Compitable " content="ie=edge">
+    <div class="lunatix">
+        <style>
+            .lunatix {
+                height: 90vh;
+                background-color: rgb(255, 253, 253);
+            }
+
+            .lunatix h1 {
+                font-size: 5vh;
+                margin-top: 3%;
+                text-align: center;
+                margin-left: 18%;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                color: #2e2eb2;
+                margin-bottom: 2%;
+            }
+
+            .lunatix-content {
+                text-align: center;
+                margin-left: 50%;
+                font-size: 8vh;
+                width: 40%;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                color: #020230;
+                flex-direction: column;
+                margin-bottom: 5%;
+            }
+
+            .button1 {
+                margin-left: 55%;
+                width: 30vh;
+                height: 30vh;
+            }
+
+            .btn1 {
+                background: rgba(23, 9, 220, 0.92);
+                display: inline-block;
+                position: relative;
+                padding: 15px 50px;
+                font-size: 2vh;
+                text-align: center;
+                width: 70px;
+                height: 30px;
+                color: #fff;
+                text-decoration: none;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+
+            .btn1:before {
+                position: absolute;
+                content: '';
+                background: rgb(255, 253, 253);
+                width: 21px;
+                height: 18px;
+                clip-path: polygon(100% 0, 0 0, 0 100%);
+                top: 0;
+                left: 0;
+            }
+
+            .btn1:after {
+                position: absolute;
+                content: '';
+                background: rgb(255, 253, 253);
+                width: 21px;
+                height: 18px;
+                clip-path: polygon(100% 0, 0 100%, 100% 100%);
+                bottom: 0;
+                right: 0;
+            }
+
+            .btn1:hover {
+                cursor: pointer;
+                background: #1E90FF;
+                box-shadow: 0 0 5px #6495ED,
+                    0 0 20px #00BFFF,
+                    0 0 60px #4169E1,
+                    0 0 150px #0000FF;
+            }
+
+            .button2 {
+                margin-left: 75%;
+                width: 30vh;
+                height: 60vh;
+                margin-top: -15%;
+            }
+
+            .btn2 {
+                background: rgba(181, 181, 197, 0.92);
+                display: inline-block;
+                position: relative;
+                padding: 15px 50px;
+                font-size: 2vh;
+                text-align: center;
+                width: 70px;
+                height: 30px;
+                color: #fff;
+                text-decoration: none;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+
+            .btn2:before {
+                position: absolute;
+                content: '';
+                background: rgb(255, 253, 253);
+                width: 21px;
+                height: 18px;
+                clip-path: polygon(100% 0, 0 0, 0 100%);
+                top: 0;
+                left: 0;
+            }
+
+            .btn2:after {
+                position: absolute;
+                content: '';
+                background: rgb(255, 253, 253);
+                width: 21px;
+                height: 18px;
+                clip-path: polygon(100% 0, 0 100%, 100% 100%);
+                bottom: 0;
+                right: 0;
+            }
+
+            .btn2:hover {
+                cursor: pointer;
+                background: #1E90FF;
+                box-shadow: 0 0 5px #6495ED,
+                    0 0 20px #00BFFF,
+                    0 0 60px #4169E1,
+                    0 0 150px #0000FF;
+            }
+
+            #accordion {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 2vw;
+                margin-top: -65%;
+                margin-left: 8%;
+                width: 400px;
+                height: 150vh;
+            }
+
+            .container li {
+
+                display: flex;
+                position: relative;
+                justify-content: center;
+                align-items: center;
+                width: 17vw;
+                height: 20vh;
+                background-color: rgb(222, 235, 242);
+            }
+
+            .container li:before {
+                position: absolute;
+                content: '';
+                background: rgb(255, 252, 252);
+                width: 35px;
+                height: 35px;
+                clip-path: polygon(0 0, 0 100%, 100% 100%);
+                bottom: 0;
+                left: 0;
+            }
+
+            .container li::after {
+                position: absolute;
+                content: '';
+                background: rgb(255, 252, 252);
+                width: 35px;
+                height: 35px;
+                clip-path: polygon(0 0, 100% 0, 100% 100%);
+                top: 0;
+                right: 0;
+            }
+
+            .container1 {
+                display: flex;
+                flex-direction: row;
+                background-color: whitesmoke;
+                width: 100%;
+                height: 42vh;
+                font-size: 20px;
+                gap: 6vh
+            }
+
+            .container {
+                margin-top: 34px;
+            }
+
+            .container1 .Col1 {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                width: 20%;
+                padding-left: 20vh;
+                padding-top: 8vh;
+                gap: 6vh;
+                font-size: larger;
+            }
+
+            .container2 ul:hover {
+                cursor: pointer;
+                background: #1E90FF;
+                box-shadow: 0 0 5px #6495ED,
+                    0 0 20px #00BFFF,
+                    0 0 60px #4169E1,
+                    0 0 150px #0000FF;
+            }
+
+            .container {
+                margin-top: 34px;
+            }
+
+            .container1 .Col1 {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                width: 20%;
+                padding-left: 20vh;
+                padding-top: 8vh;
+                gap: 6vh;
+                font-size: larger;
+            }
+
+            .social-icons {
+                display: flex;
+                gap: 5vh;
+                padding-left: 2vh;
+            }
+
+            .social-icons p {
+
+                color: #2e2eb2;
+
+            }
+
+            .Col1 h1 {
+                color: #2e2eb2;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                margin-left: -10%;
+            }
+
+            .Col2 p {
+                font-size: 4vh;
+                color: #020230;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+
+            .Col3 p {
+                font-size: 4vh;
+                color: #020230;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+
+            .Col4 p {
+                font-size: 4vh;
+                color: #020230;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+
+            .Col1 li {
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-size: 3vh;
+                color: #020230;
+                width: 110%;
+                margin-left: -10%;
+                margin-top: -10%;
+                margin-bottom: 10%;
+            }
+
+            .Col3 {
+                display: flex;
+                flex-direction: column;
+                padding-top: 8vh;
+                gap: 11vh;
+                width: 300px;
+            }
+
+            .Col4 {
+                display: flex;
+                flex-direction: column;
+                padding-top: 8vh;
+                gap: 9vh;
+                width: 300px;
+            }
+
+            .Col2 {
+                display: flex;
+                flex-direction: column;
+                padding-top: 8vh;
+                gap: 8vh;
+                width: 300px;
+            }
+
+            .Lists {
+                display: flex;
+                flex-direction: column;
+                gap: 13px;
+                align-items: left;
+                margin-left: 20%;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                color: #020230;
+                margin-top: 20%;
+                font-size: 2vh;
+            }
+
+            .Lists i {
+                color: #2e2eb2;
+            }
+
+            .Lists1 {
+                display: flex;
+                flex-direction: column;
+                gap: 13px;
+                align-items: left;
+                margin-left: 4%;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                color: #020230;
+                margin-top: -10%;
+                font-size: 2vh;
+            }
+        </style>
+
+        <h1><b>Why Lunatix?</b></h1>
+        <div class="lunatix-content">
+            <p>Giving <b>Good</b> health to Good <b>Peoples</b>.</p>
+        </div>
+        <div class="button1">
+            <p class="btn1">Learn More</p>
+        </div>
+        <div class="button2">
+            <p class="btn2">Contact Us</p>
+        </div>
+        <ul id="accordion">
+            <li>
+                <label for="first"><i class="fa-sharp fa-solid fa-heart"></i>Unique
+                    Facilities<span>&#x3e;</span></label>
+                <input type="radio" name="accordion" id="first" checked>
+                <div class="accordion_content">
+                    <p>Progressively maintain extensive infomediaries via extensible niches.</p>
+                </div>
+            </li>
+            <li>
+                <label for="second"><i class="fa-regular fa-percent"></i>Cost Effective<span>&#x3e;</span></label>
+                <input type="radio" name="accordion" id="second">
+                <div class="accordion_content">
+                    <p>Progressively maintain extensive infomediaries via extensible niches.</p>
+                </div>
+            </li>
+            <li>
+                <label for="third"><i class="fa-solid fa-circle-play"></i>Professional Trainer
+                    Tutorial<span>&#x3e;</span></label>
+                <input type="radio" name="accordion" id="third">
+                <div class="accordion_content">
+                    <p>Progressively maintain extensive infomediaries via extensible niches.</p>
+                </div>
+            </li>
+            <li>
+                <label for="fourth"><i class="fa-regular fa-utensils"></i>Meal Plans<span>&#x3e;</span></label>
+                <input type="radio" name="accordion" id="fourth">
+                <div class="accordion_content">
+                    <p>Progressively maintain extensive infomediaries via extensible niches.</p>
+                </div>
+            </li>
+        </ul>
+
+    </div>
